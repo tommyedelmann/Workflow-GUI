@@ -1,0 +1,24 @@
+<metadata>
+	
+	<task name = 'Produce1' path = 'D1' batch = 'task1.bat' pauseafter = '0' type = 'prod' id = '0'> 
+	</task>
+	
+	<task name = 'Ziptest1' path = 'D1' batch = 'Ziptest1.py' pauseafter = '0' type = 'zip' id = '1'>
+	</task>
+	
+	<task name = 'Check1' path = 'D1' zip = 'Aggregate1.zip' log = 'complete1.log' error = 'complete1.err.txt' pauseafter = '1' type = 'check' id = '2'>
+	</task>
+	
+	<task name = 'Produce2' path = 'D2' batch = 'task2.bat' pauseafter = '0' type = 'prod' id = '3'>
+	</task>
+	
+	<task name = 'Ziptest2' path = 'D2' batch = 'Ziptest2.py' pauseafter = '0' type = 'zip' id = '4'>
+	</task>
+	
+	<task name = 'Check2' path = 'D2' zip = 'Aggregate2.zip' log = 'complete2.log' error = 'complete2.err.txt' pauseafter = '0' type = 'check' id = '5'>
+	</task>
+
+	<config deftheme = 'DefaultNoMoreNagging' maindir = 'C:\Users\tommy.edelmann\Workflow\Batch\' D1files = 'complete1.log, complete1.err.txt' D2files = 'complete2.log, complete2.err.txt'>
+	</config>
+	
+</metadata>
