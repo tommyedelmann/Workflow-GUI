@@ -8,10 +8,6 @@ import sys
 import getopt
 import sys, getopt
 
-#versioncontrolsystem
-#switchstatements
-#github
-#newGUI
 
 #This is the main argument function. All code except for the execution is in here,
 #including a while-loop that keeps the GUI open.
